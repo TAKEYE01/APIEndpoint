@@ -1,0 +1,22 @@
+{
+  "name": "APIEndpoint",
+  "version": "1.0.0",
+  "description": "Tanner Keyes creating a API Endpoint using Express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TAKEYE01/APIEndpoint.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TAKEYE01/APIEndpoint/issues"
+  },
+  "homepage": "https://github.com/TAKEYE01/APIEndpoint#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
