@@ -10,7 +10,7 @@ app.get('/name/:name', (req, res) => {
     res.send('Hello my name is ' + req.params.name)
 })
 
-app.post('/post', (req, res) => {
+app.post('/posts', (req, res) => {
     res.send('Posted')
 })
 
