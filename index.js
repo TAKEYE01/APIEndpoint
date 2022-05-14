@@ -1,6 +1,10 @@
 const express = require('express')
+const bodyParser = require('body-parser');
 const app = express()
 const port = 3000
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json())
 
 app.route('/').get((req, res) => {
     res.send('Hello World!')
@@ -11,7 +15,7 @@ app.get('/name/:name', (req, res) => {
 })
 
 app.post('/posts', (req, res) => {
-    res.send(req.params.author + " added a new blog post called: " + req.params.subject)
+    res.send(req.body.author + " added a new blog post called: " + req.body.subject)
 })
 
 app.listen(port, () => {
