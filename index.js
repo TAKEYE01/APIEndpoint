@@ -11,7 +11,7 @@ app.get('/name/:name', (req, res) => {
 })
 
 app.post('/posts', (req, res) => {
-    res.send('Posted')
+    res.send(req.params.author + " added a new blog post called: " + req.params.subject)
 })
 
 app.listen(port, () => {
